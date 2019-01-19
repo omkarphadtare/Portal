@@ -1,0 +1,3 @@
+create table SignUp(Name varchar(25) not null, Email_Id varchar(25) primary key,Password varchar(20) not null,Date datetime);
+create table LogIn(Email_Id varchar(25) not null,Password varchar(20) not null,Date datetime,Company int(2) default null,Post int(2) default null, foreign key (Email_Id) references SignUp(Email_Id));
+
